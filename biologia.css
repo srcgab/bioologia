@@ -1,0 +1,90 @@
+/*css menu*/
+#menu ul{
+    top: 0em;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+h1{
+  color: #f7d754ff;
+  text-align: center;
+  font-family: "Dyuthi", sans-serif;
+  font-size: 2.5em;
+}
+
+body{
+  background-color: white;
+  text-align: justify;
+}
+header{
+  background-color: #008499ff;
+  background-attachment: fixed;
+  padding: 15px;
+}
+
+/*js das imagens*/
+#esquerda{
+  position: relative;
+  left: 6em;
+}
+#direita{
+  position: relative;
+  left: 18em
+}
+[data-anime] {
+  opacity: 0;
+  transition: .3s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+img{
+   width: 400px;
+  border-radius: 20px;
+text-align: center;
+}
+
+.poluicao{
+  background-image: url(img/poluicao.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-attachment: fixed;
+  height: 30em;
+  width: auto;
+}
+.poluicao>h1{
+  color: #87b212ff;
+    /*font-family: 'Shojumaru', cursive;*/
+    margin-right: 100px;
+    margin-left: 100px;
+    position: relative;
+    font-size: 4em;
+    text-align: center;
+    top: 1em;
+    left: 6em;
+  }
+
+a{
+    text-decoration: none;
+    position: relative;
+    color: #c3d123ff;
+}
+a:hover{
+    color:#5d7c0aff;
+}
